@@ -22,9 +22,7 @@ const AddUser = () => {
                         <label>Product Title</label>
                         <input
                             type="text"
-                            {...register("pname")}
-                            className='form-control'
-                            placeholder='Enter Product Name'
+                            {...register("pname")} className='form-control'placeholder='Enter Product Name'
                         />
                     </div>
                     <div className="my-3">
@@ -32,6 +30,14 @@ const AddUser = () => {
                         <input
                             type="date"
                             {...register("pdate")} 
+                            className='form-control'
+                        />
+                    </div>
+                    <div className="my-3">
+                        <label>Product price</label>
+                        <input
+                            type="number"
+                            {...register("pprice")} 
                             className='form-control'
                         />
                     </div>

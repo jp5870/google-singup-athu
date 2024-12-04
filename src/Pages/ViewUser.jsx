@@ -27,6 +27,7 @@ const ViewUser = () => {
                             <th>SRNO</th>
                             <th>ProductName</th>
                             <th>ProductDate</th>
+                            <th>Productprice</th>
                             <th>ProductDescription</th>
                             <th>Action</th>
                         </tr>
@@ -40,6 +41,7 @@ const ViewUser = () => {
                                         <td>{index + 1}</td>
                                         <td>{product?.pname}</td>
                                         <td>{product?.pdate}</td>
+                                        <td>{product?.pprice}</td>
                                         <td>{product?.pdesc}</td>
                                         <td>
                                             <NavLink to={`/updateuser/${product.id}`}>
